@@ -102,6 +102,7 @@ function colorizeAircraft(aircraft: string) {
         case 'B71':
         case 'CL6':
         case 'BE1':
+        case 'E50':
             colorizer = colors.red;
             break;
 
