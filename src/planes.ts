@@ -46,7 +46,7 @@ function getPlanes(offset: number, callback: (planes: Plane[]) => void) {
             let aircraftModel = getThing(1);
             let origin = getThing(2);
             let estimatedArrivalTime = getOtherThing(5);
-            
+
             planes.push(new Plane(flightNumber, aircraftModel, origin, estimatedArrivalTime));
         });
 
@@ -71,7 +71,7 @@ function getAllPlanes(callback: (planes: Plane[]) => void) {
             callback(allPlanes);
         } else {
             /* We are not done, get more planes. */
-            getPlanes(offset, newPlanes);   
+            getPlanes(offset, newPlanes);
         }
     }
 
@@ -84,7 +84,7 @@ function colorizeAircraft(aircraft: string) {
     const subAircraft = aircraft.substr(0, 3);
 
     let colorizer = null;
-    
+
     switch (subAircraft) {
         /* medium */
         case 'A31':
@@ -104,7 +104,7 @@ function colorizeAircraft(aircraft: string) {
         case 'BE1':
             colorizer = colors.red;
             break;
-        
+
         /* large */
         case 'A33':
         case 'B73':
