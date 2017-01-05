@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import * as request from 'request';
 import * as http from 'http';
 import * as cheerio from 'cheerio';
